@@ -1,0 +1,71 @@
+<!DOCTYPE html lang="es">
+<html>
+<head>
+	<title>Pruebas Geoportal</title>
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+	<!-- Estadistico  -->
+	<script src="./layers/estadistico/Canaimasentregadas.js"></script>
+	<script src="./layers/estadistico/Canaimasentregadastyle.js"></script>
+	<script src="./layers/estadistico/MatriculaCircuitos.js"></script>
+	<script src="./layers/estadistico/MatriculaCircuitos_style.js"></script>
+	<script src="./layers/estadistico/PlantelesCircuito.js"></script>
+	<script src="./layers/estadistico/PlantelesCircuito_style.js"></script>
+</head>
+<body>
+	<!--Banner-->
+	<header class="header_1">
+		<div class="header_1-1">
+			<div class="header_1-1-1">
+				<img src="./Img_/gobierno.png" class="img_1">
+			</div>
+		</div>
+		<div class="header_1-2">
+			<div class="header_1-2-1">
+				Sistema de Consulta Estadística y Cartográfica
+			</div>
+			<div class="header_1-2-1">
+				Geoportal "Ramon Tovar"
+			</div>
+		</div>
+		<div class="header_1-3">
+			<div class="header_1-3-1" style="margin-right: -50px;">
+				<img src="./Img_/logo-b.png" class="img_2">
+			</div>
+			<div class="header_1-3-1">
+				<img src="./Img_/mppe-blanco-sin-fondo.png" class="img_2">
+			</div>
+		</div>
+	</header>
+	<!--Fin Banner-->
+
+	<div id="mapa" class="mapa" style="height:100%">
+		
+	</div>
+    <div id="popup" class="ol-popup">
+		<a href="#" id="popup-closer" class="ol-popup-closer">X</a>
+		<div id="popup-content"></div>
+	</div>
+	
+	
+	<div class="aside_0" id="aside0"></div>
+<aside class="aside_1">
+	<div class="aside_1-2" id="aside1">
+		<div id="opciones" class="aside_1-2-1">
+		</div>
+	</div>
+	<div class="aside_1-1">
+		<button class="botton_1" id="btn_act">
+			<img class="imagen_1" src="icon_1.png">
+		</button>
+	</div>
+</aside>
+
+<script type="text/javascript" src="./layers/layers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
